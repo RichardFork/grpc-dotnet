@@ -25,7 +25,7 @@ var mailboxName = GetMailboxName(args);
 Console.WriteLine($"Creating client to mailbox '{mailboxName}'");
 Console.WriteLine();
 
-var channel = GrpcChannel.ForAddress("https://localhost:5001");
+var channel = GrpcChannel.ForAddress("https://localhost:3388");
 var client = new Mailer.MailerClient(channel);
 
 Console.WriteLine("Client created");
